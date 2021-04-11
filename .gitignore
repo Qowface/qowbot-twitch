@@ -1,0 +1,6 @@
+config/commands.json
+config/config.json
+db/quotes.json
+node_modules/
+temp/
+.env

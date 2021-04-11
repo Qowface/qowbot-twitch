@@ -1,0 +1,14 @@
+{
+    "prefix": "!",
+    "tmi": {
+        "username": "my-bot-name",
+        "password": "oauth:my-bot-token",
+        "channels": [
+            "my-channel-name"
+        ]
+    },
+    "twitch": {
+        "clientId": "",
+        "clientSecret": ""
+    }
+}

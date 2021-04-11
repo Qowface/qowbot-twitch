@@ -1,0 +1,17 @@
+{
+  "quotes": [
+    {
+      "id": 1,
+      "quote": "\"Moo\" - Cows"
+    },
+    {
+      "id": 2,
+      "quote": "\"Quack\" - Ducks"
+    },
+    {
+      "id": 3,
+      "quote": "\"Bork\" - Doggos"
+    }
+  ],
+  "count": 3
+}

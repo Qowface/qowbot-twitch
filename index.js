@@ -38,7 +38,7 @@ client.on('message', (channel, tags, message, self) => {
     if (!command) return;
 
     try {
-        command.execute(client, channel, args);
+        command.execute(client, channel, args, commandName);
     } catch (error) {
         console.error(error);
     }

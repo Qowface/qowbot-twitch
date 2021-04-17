@@ -3,10 +3,12 @@ const { shoutouts } = shoutout;
 
 module.exports = {
     name: 'shoutout',
-    aliases: ['s'],
+    aliases: ['s', ...Object.keys(shoutouts)],
     description: 'Shoutouts!',
-    execute(client, channel, args) {
-        if (args[0] in shoutouts) {
+    execute(client, channel, args, commandName) {
+        if (commandName in shoutouts) {
+            client.say(channel, shoutouts[commandName]);
+        } else if (args[0] in shoutouts) {
             client.say(channel, shoutouts[args[0]]);
         }
     }

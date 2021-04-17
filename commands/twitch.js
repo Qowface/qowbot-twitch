@@ -15,7 +15,7 @@ module.exports = {
             let game = data.game;
             let url = data.url;
 
-            client.say(channel, `${displayName} was last seen playing ${game} over at ${url}! Be sure to check our their channel and give them a follow!`);
+            client.say(channel, `${displayName} was last seen playing ${game} over at ${url}! Be sure to check out their channel and give them a follow!`);
         });
     }
 };

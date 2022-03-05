@@ -9,13 +9,11 @@ module.exports = {
         twitch.getTwitch(name).then(data => {
             if (!data) return;
 
-            console.log(data);
+            let name = data.name;
+            let displayName = data.displayName;
+            let game = data.gameName;
 
-            let displayName = data.display_name;
-            let game = data.game;
-            let url = data.url;
-
-            client.say(channel, `${displayName} was last seen playing ${game} over at ${url}! Be sure to check out their channel and give them a follow!`);
+            client.say(channel, `${displayName} was last seen playing ${game} over at twitch.tv/${name}! Be sure to check out their channel and give them a follow!`);
         });
     }
 };
